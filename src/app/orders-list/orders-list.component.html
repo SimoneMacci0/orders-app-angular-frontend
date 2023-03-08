@@ -1,0 +1,17 @@
+<div class="orders-container">
+  <div class="orders">
+    <div class="order" *ngFor="let order of orders">
+        <div class="order-info">
+          <div class="description">{{ order.description }}</div>
+          <div class="status" [ngClass]="order.status.toLowerCase()">{{ order.status }}</div>
+        </div>
+        <div class="actions" *ngIf="order.status === 'IN_PROGRESS'">
+          <button class="complete" (click)="completeOrder(order)">Complete</button>
+          <button class="cancel" (click)="cancelOrder(order)">Cancel</button>
+        </div>
+      </div>
+    </div>
+</div>
+<div class="app-order-form">
+  <app-order-form (listUpdated)="onListUpdated($event)"></app-order-form>
+</div>

@@ -1,0 +1,24 @@
+{
+	"_embedded": {
+		"orderList": [
+			{
+				"id": 1,
+				"description": "TEST",
+				"status": "COMPLETE",
+				"_links": {
+					"self": {
+						"href": "https://orders-service-standalone-leggendario-fratm-dev.apps.sandbox-m2.ll9k.p1.openshiftapps.com/orders/1"
+					},
+					"orders": {
+						"href": "https://orders-service-standalone-leggendario-fratm-dev.apps.sandbox-m2.ll9k.p1.openshiftapps.com/orders"
+					}
+				}
+			}
+		]
+	},
+	"_links": {
+		"self": {
+			"href": "https://orders-service-standalone-leggendario-fratm-dev.apps.sandbox-m2.ll9k.p1.openshiftapps.com/orders"
+		}
+	}
+}

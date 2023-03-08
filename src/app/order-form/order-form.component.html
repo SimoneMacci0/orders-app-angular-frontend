@@ -1,0 +1,12 @@
+<form (ngSubmit)="onSubmit()">
+    <div>
+      <label for="description">Add new order:</label>
+      <input type="text" id="description" placeholder="description" [(ngModel)]="description" name="description" required>
+    </div>
+    <button class="submit" type="submit">Add</button>
+    <div class="error-container">
+        <div *ngIf="successMessage" class="success-message">{{ successMessage }}</div>
+        <div *ngIf="errorMessage" class="error-message">{{ errorMessage }}</div>
+    </div>
+  </form>
+  
