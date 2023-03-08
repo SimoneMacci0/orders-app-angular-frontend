@@ -5,5 +5,5 @@ COPY . .
 RUN npm install
 RUN npm run build --prod
 #stage 2
-FROM nginx:alpine
+FROM nginxinc/nginx-unprivileged 
 COPY --from=node /app/dist/orders-app /usr/share/nginx/html
