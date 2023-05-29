@@ -8,7 +8,7 @@ import { Order } from './order';
   providedIn: 'root'
 })
 export class OrderService {
-  private apiUrl = 'https://orders-backend1.simone-maccio-dev.svc.cluster.local:8080/orders';
+  private apiUrl = 'orders-backend1.simone-maccio-dev.svc.cluster.local:8080/orders';
 
   constructor(private http: HttpClient) {}
 
